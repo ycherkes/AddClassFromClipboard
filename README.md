@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Add Class From Clipboard** Visual Studio extension enables developers to quickly create a new C# class (interface or enum) file from the clipboard text content.
+This Visual Studio extension lets developers quickly create a new C# class (interface or enum) file from the clipboard text content.
 
 ---
 
@@ -34,7 +34,7 @@ The **Add Class From Clipboard** Visual Studio extension enables developers to q
    - Parse the clipboard content.
    - Extract the class name.
    - Create a `.cs` file named after the class in the selected folder.
-4. If a valid class name cannot be extracted, no file will be created.
+4. No file will be created if a valid class name cannot be extracted.
 
 ---
 
