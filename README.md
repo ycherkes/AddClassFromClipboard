@@ -61,4 +61,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For issues or feature requests, please open an issue on the [GitHub repository](https://github.com/your-repo-link).
+For issues or feature requests, please open an issue on the [GitHub repository](https://github.com/ycherkes/AddClassFromClipboard).
