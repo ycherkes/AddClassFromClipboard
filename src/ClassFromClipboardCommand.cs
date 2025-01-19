@@ -32,7 +32,7 @@ namespace AddClassFromClipboard
         }
 
         /// <inheritdoc />
-        public override CommandConfiguration CommandConfiguration => new("%AddNewClassFromClipboard.ClassFromClipboardCommand.DisplayName%")
+        public override CommandConfiguration CommandConfiguration => new($"%{nameof(AddClassFromClipboard)}.{nameof(ClassFromClipboardCommand)}.DisplayName%")
         {
             // Use this object initializer to set optional parameters for the command. The required parameter,
             // displayName, is set above. DisplayName is localized and references an entry in .vsextension\string-resources.json.
@@ -51,6 +51,11 @@ namespace AddClassFromClipboard
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
+            await ExecuteCommand();
+        }
+
+        private async Task ExecuteCommand()
+        {
             var dte = (DTE2)Package.GetGlobalService(typeof(DTE));
             if (dte == null) return;
 
