@@ -43,7 +43,7 @@ namespace AddClassFromClipboard
                 CommandPlacement.VsctParent(new Guid("D309F791-903F-11D0-9EFC-00A0C911004F"), 0x0203, 800), //IDG_VS_CTXT_PROJECT_ADD_ITEMS  - solution explorer
             ],
             EnabledWhen = ActivationConstraint.SolutionState(SolutionState.FullyLoaded),
-            Shortcuts = [new CommandShortcutConfiguration(ModifierKey.ControlShiftLeftAlt, Key.C)]
+            Shortcuts = [new CommandShortcutConfiguration(ModifierKey.ControlShift, Key.E)]
         };
 
         /// <inheritdoc />

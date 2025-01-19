@@ -10,15 +10,17 @@ The **Add Class From Clipboard** Visual Studio extension enables developers to q
 
 ## Features
 
-- **Contextual Placement**:
+- **Placement**:
   - Available in the **Project** menu
+    ![image](https://github.com/user-attachments/assets/144888a6-6f3c-4edb-8109-645828916a48)
   - Available in the **Solution Explorer** context menu under "Add."
+    ![image](https://github.com/user-attachments/assets/b5bf8c35-1a11-4eb7-a1da-b043ec070a4f)
 
 - **Automatic Class Naming**:
   - Extracts the class name from the clipboard content to name the new file appropriately.
 
 - **Keyboard Shortcut**:
-  - Quickly invoke the command with `Ctrl + Shift + Alt + C`.
+  - Quickly invoke the command with `Ctrl + Shift + E`.
 
 ---
 
@@ -38,7 +40,7 @@ The **Add Class From Clipboard** Visual Studio extension enables developers to q
 
 ## Keyboard Shortcut
 
-- **Default Shortcut**: `Ctrl + Shift + Alt + C`
+- **Default Shortcut**: `Ctrl + Shift + E`
 - To customize the shortcut:
   1. Go to **Tools -> Options -> Keyboard**.
   2. Search for the command by its display name: `Add Class From Clipboard`.
