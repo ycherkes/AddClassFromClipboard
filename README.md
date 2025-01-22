@@ -1,6 +1,7 @@
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://stand-with-ukraine.pp.ua)
 
-# Add Class From Clipboard - Visual Studio Extension
+# [<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Add Class From Clipboard Marketplace" width="75"/>](https://marketplace.visualstudio.com/items?itemName=YevhenCherkes.AddClassFromClipboard) [Add Class From Clipboard - Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=YevhenCherkes.AddClassFromClipboard)
+
 
 ## Overview
 
