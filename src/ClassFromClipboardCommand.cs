@@ -43,7 +43,7 @@ namespace AddClassFromClipboard
                 CommandPlacement.VsctParent(new Guid("D309F791-903F-11D0-9EFC-00A0C911004F"), 0x0203, 800), //IDG_VS_CTXT_PROJECT_ADD_ITEMS  - solution explorer
             ],
             EnabledWhen = ActivationConstraint.SolutionState(SolutionState.FullyLoaded),
-            Shortcuts = [new CommandShortcutConfiguration(ModifierKey.ControlShift, Key.E)]
+            Shortcuts = [new CommandShortcutConfiguration(ModifierKey.Control, Key.E, ModifierKey.Control, Key.V)]
         };
 
         /// <inheritdoc />
@@ -51,11 +51,6 @@ namespace AddClassFromClipboard
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
-            await ExecuteCommand();
-        }
-
-        private async Task ExecuteCommand()
-        {
             var dte = (DTE2)Package.GetGlobalService(typeof(DTE));
             if (dte == null) return;
 
@@ -77,7 +72,7 @@ namespace AddClassFromClipboard
 
             if (project == null) return;
 
-            var folder = Path.GetDirectoryName(projectItem != null ?  projectItem.FileNames[1] : project.FileName);
+            var folder = Path.GetDirectoryName(projectItem != null ? projectItem.FileNames[1] : project.FileName);
 
             if (string.IsNullOrWhiteSpace(folder)) return;
 
