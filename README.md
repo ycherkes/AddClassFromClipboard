@@ -1,6 +1,9 @@
 [![Stand With Ukraine](https://github.com/user-attachments/assets/f9a7bb0c-5cec-45da-93d8-8eb9f17c51e7)](https://stand-with-ukraine.pp.ua)
 
-# [<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Add Class From Clipboard Marketplace" width="75"/>](https://marketplace.visualstudio.com/items?itemName=YevhenCherkes.AddClassFromClipboard) [Add Class From Clipboard - Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=YevhenCherkes.AddClassFromClipboard)
+
+[![Add Class From Clipboard](https://YevhenCherkes.gallerycdn.vsassets.io/extensions/yevhencherkes/addclassfromclipboard/0.0.2/1737809682937/Microsoft.VisualStudio.Services.Icons.Default)](https://marketplace.visualstudio.com/items?itemName=YevhenCherkes.AddClassFromClipboard)
+
+# [Add Class From Clipboard - Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=YevhenCherkes.AddClassFromClipboard)
 
 ## Overview
 
