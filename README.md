@@ -1,7 +1,6 @@
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://stand-with-ukraine.pp.ua)
+[![Stand With Ukraine](https://github.com/user-attachments/assets/f9a7bb0c-5cec-45da-93d8-8eb9f17c51e7)](https://stand-with-ukraine.pp.ua)
 
 # [<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Add Class From Clipboard Marketplace" width="75"/>](https://marketplace.visualstudio.com/items?itemName=YevhenCherkes.AddClassFromClipboard) [Add Class From Clipboard - Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=YevhenCherkes.AddClassFromClipboard)
-
 
 ## Overview
 
@@ -13,15 +12,15 @@ This Visual Studio extension lets developers quickly create a new C# class (inte
 
 - **Placement**:
   - In the **Project** menu
-    ![image](https://github.com/user-attachments/assets/144888a6-6f3c-4edb-8109-645828916a48)
+    ![image](https://github.com/user-attachments/assets/c33ac5a3-168b-4f35-a3b9-23797f5cb583)
   - In the **Solution Explorer** context menu under "Add."
-    ![image](https://github.com/user-attachments/assets/b5bf8c35-1a11-4eb7-a1da-b043ec070a4f)
+    ![image](https://github.com/user-attachments/assets/ce6e1908-6287-467f-a8cd-c0e58e44e6e9)
 
 - **Automatic Class Naming**:
   - Extracts the class name from the clipboard content to name the new file appropriately.
 
 - **Keyboard Shortcut**:
-  - Quickly invoke the command with `Ctrl + Shift + E`.
+  - Quickly invoke the command with `Ctrl + E, Ctrl + V`.
 
 ---
 
@@ -38,15 +37,6 @@ This Visual Studio extension lets developers quickly create a new C# class (inte
 4. No file will be created if a valid class name cannot be extracted.
 
 ---
-
-## Keyboard Shortcut
-
-- **Default Shortcut**: `Ctrl + Shift + E`
-- To customize the shortcut:
-  1. Go to **Tools -> Options -> Keyboard**.
-  2. Search for the command by its display name: `Add Class From Clipboard`.
-  3. Assign a new shortcut if desired.
-
 ## Contributing
 
 Contributions are welcome! To contribute:
