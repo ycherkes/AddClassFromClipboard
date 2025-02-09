@@ -64,15 +64,15 @@ namespace AddClassFromClipboard
             if (string.IsNullOrWhiteSpace(newItemName))
                 return;
 
-            var project = dte.SelectedItems.Item(1).Project ?? dte.ActiveDocument?.ProjectItem.ContainingProject;
+            var selectedItem = dte.SelectedItems.Item(1);
 
-            var projectItem = dte.SelectedItems.Item(1).ProjectItem ?? dte.ActiveDocument?.ProjectItem;
-
-            project ??= projectItem?.ContainingProject;
+            var project = selectedItem.Project ?? selectedItem.ProjectItem?.ContainingProject ?? dte.ActiveDocument?.ProjectItem?.ContainingProject;
 
             if (project == null) return;
 
-            var folder = Path.GetDirectoryName(projectItem != null ? projectItem.FileNames[1] : project.FileName);
+            var fileName = selectedItem.Project?.FileName ?? (selectedItem.ProjectItem ?? dte.ActiveDocument?.ProjectItem)?.FileNames[1];
+
+            var folder = Path.GetDirectoryName(fileName);
 
             if (string.IsNullOrWhiteSpace(folder)) return;
 
