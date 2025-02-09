@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="AddClassFromClipboard.467d3955-2641-42e8-8562-574c9e7d7f4e" Version="0.0.2" Language="en-US" Publisher="Yevhen Cherkes" />
+    <Identity Id="AddClassFromClipboard.467d3955-2641-42e8-8562-574c9e7d7f4e" Version="0.0.3" Language="en-US" Publisher="Yevhen Cherkes" />
     <DisplayName>Add Class from Clipboard</DisplayName>
     <Description>Adds new class from clipboard with name identified from content.</Description>
     <Preview>true</Preview>
