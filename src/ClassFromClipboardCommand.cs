@@ -1,14 +1,15 @@
-﻿using System.Diagnostics;
-using System.IO;
-using System.Windows;
-using EnvDTE;
+﻿using EnvDTE;
 using EnvDTE80;
 using Microsoft;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.VisualStudio.Extensibility;
 using Microsoft.VisualStudio.Extensibility.Commands;
 using Microsoft.VisualStudio.Shell;
+using System.Diagnostics;
+using System.IO;
+using System.Windows;
 
 namespace AddClassFromClipboard
 {
@@ -93,27 +94,17 @@ namespace AddClassFromClipboard
                 var syntaxTree = CSharpSyntaxTree.ParseText(clipboardContent);
                 var root = syntaxTree.GetRoot();
 
-                var classDeclaration = root.DescendantNodes().OfType<ClassDeclarationSyntax>().FirstOrDefault();
-                
-                var className = classDeclaration?.Identifier.Text;
+                var suitableNode = root.DescendantNodes()
+                    .Select(x => x switch
+                        {
+                            BaseTypeDeclarationSyntax bts => bts.Identifier,
+                            DelegateDeclarationSyntax dds => dds.Identifier,
+                            _ => new SyntaxToken()
+                        }
+                    )
+                    .FirstOrDefault(node => string.IsNullOrWhiteSpace(node.Text));
 
-                if (className != null)
-                {
-                    return className;
-                }
-
-                var interfaceDeclaration = root.DescendantNodes().OfType<InterfaceDeclarationSyntax>().FirstOrDefault();
-
-                var interfaceName = interfaceDeclaration?.Identifier.Text;
-
-                if (interfaceName != null)
-                {
-                    return interfaceName;
-                }
-
-                var enumDeclaration = root.DescendantNodes().OfType<EnumDeclarationSyntax>().FirstOrDefault();
-
-                return enumDeclaration?.Identifier.Text;
+                return suitableNode.Text;
 
             }
             catch (Exception e)
