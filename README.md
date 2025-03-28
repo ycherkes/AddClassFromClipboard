@@ -1,4 +1,4 @@
-[![Stand With Ukraine](https://github.com/user-attachments/assets/f9a7bb0c-5cec-45da-93d8-8eb9f17c51e7)](https://stand-with-ukraine.pp.ua)
+﻿[![Stand With Ukraine](https://github.com/user-attachments/assets/f9a7bb0c-5cec-45da-93d8-8eb9f17c51e7)](https://stand-with-ukraine.pp.ua)
 
 
 [![Add Class From Clipboard](https://YevhenCherkes.gallerycdn.vsassets.io/extensions/yevhencherkes/addclassfromclipboard/0.0.2/1737809682937/Microsoft.VisualStudio.Services.Icons.Default)](https://marketplace.visualstudio.com/items?itemName=YevhenCherkes.AddClassFromClipboard)
@@ -7,7 +7,7 @@
 
 ## Overview
 
-This Visual Studio extension lets developers quickly create a new C# class (interface or enum) file from the clipboard text content.
+This Visual Studio extension lets developers quickly create a new C# class (interface, enum, or delegate) file from the clipboard text content.
 
 ---
 
@@ -29,15 +29,15 @@ This Visual Studio extension lets developers quickly create a new C# class (inte
 
 ## How to Use
 
-1. Copy valid C# code containing a class declaration to your clipboard.
+1. Copy valid C# code containing a class (interface, enum, delegate) declaration to your clipboard.
 2. In Visual Studio:
    - Right-click a folder in **Solution Explorer**, navigate to **Add**, and select "Add Class From Clipboard."
    - Or, open the **Project** menu and select "Add Class From Clipboard."
 3. The extension will:
    - Parse the clipboard content.
    - Extract the class name.
-   - Create a `.cs` file named after the class in the selected folder.
-4. No file will be created if a valid class name cannot be extracted.
+   - Create a `.cs` file named after the type in the selected folder.
+4. No file will be created if a valid type name cannot be extracted.
 
 ---
 ## Contributing
