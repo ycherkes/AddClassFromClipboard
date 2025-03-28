@@ -102,7 +102,7 @@ namespace AddClassFromClipboard
                             _ => new SyntaxToken()
                         }
                     )
-                    .FirstOrDefault(node => string.IsNullOrWhiteSpace(node.Text));
+                    .FirstOrDefault(node => !string.IsNullOrWhiteSpace(node.Text));
 
                 return suitableNode.Text;
 
