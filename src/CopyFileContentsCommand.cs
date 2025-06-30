@@ -50,6 +50,7 @@ internal class CopyFileContentsCommand : Command
         }
 
         var sb = new StringBuilder();
+
         foreach (var filePath in filePaths.Distinct())
         {
             if (!File.Exists(filePath))
@@ -59,12 +60,13 @@ internal class CopyFileContentsCommand : Command
 
             try
             {
+                sb.AppendLine($"// File: {Path.GetFileName(filePath)}");
                 sb.AppendLine(File.ReadAllText(filePath));
                 sb.AppendLine();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                // ignored
+                sb.AppendLine($"// Error reading {filePath}: {ex.Message}");
             }
         }
 
