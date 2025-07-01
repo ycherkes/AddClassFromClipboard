@@ -1,3 +1,4 @@
-{
-  "AddClassFromClipboard.ClassFromClipboardCommand.DisplayName": "Add Class from Clipboard"
+﻿{
+  "AddClassFromClipboard.ClassFromClipboardCommand.DisplayName": "Add Class from Clipboard",
+  "AddClassFromClipboard.CopyFileContentsCommand.DisplayName": "Copy File(s) content to Clipboard"
 }
